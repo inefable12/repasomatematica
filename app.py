@@ -31,7 +31,7 @@ if st.button("Generar Ecuación"):
     st.write(f"La ecuación generada es: {st.session_state['a']}x + {st.session_state['b']} = 0")
 
 # Botón para mostrar la solución
-if st.button(f"Mostrar Solución de {a}x+{b}=0"):
+if st.button("Mostrar Solución"):
     a = st.session_state['a']
     b = st.session_state['b']
     if a is not None and b is not None:
