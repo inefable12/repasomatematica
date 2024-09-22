@@ -16,13 +16,12 @@ def resolver_ecuacion(a, b):
         return None
 
 # Título de la aplicación
-st.title("Generador y Solucionador de Ecuaciones de Primer Grado")
+st.title("Generador y Solucionador de Ecuaciones de 1º")
 
 # Botón para generar una nueva ecuación
-if st.button("Generar Ecuación Ax+B=0"):
+if st.button("Generar Ecuación: Ax+B=0"):
     a, b = generar_ecuacion()
-    
-st.write(f"La ecuación generada es: {a}x + {b} = 0")
+    st.write(f"La ecuación generada es: {a}x + {b} = 0")
 
 
 # Botón para generar una nueva ecuación
