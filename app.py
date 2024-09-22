@@ -11,7 +11,7 @@ def generar_ecuacion():
 # Función para resolver la ecuación ax + b = 0
 def resolver_ecuacion(a, b):
     if a != 0:
-        return b/a
+        return -b/a
     else:
         return None
 
@@ -22,6 +22,14 @@ st.title("Generador y Solucionador de Ecuaciones de 1º")
 if st.button("Generar Ecuación: Ax+B=C"):
     a, b = generar_ecuacion()
     st.write(f"La ecuación generada es: {a}x + {b} = 0")
+    if st.button("Ver Solución:"):
+        st.write(f"Para la ecuación: {a}x + {b} = 0")
+        solucion = resolver_ecuacion(a,b)
+        if solucion is not None:
+            st.write(f"La ecuación generada es: x={solucion}")
+        else:
+            st.write("No tiene solución")
+
     # Resolver la ecuación
     # solucion = resolver_ecuacion(a, b, c)
     #if solucion is not None:
@@ -29,8 +37,7 @@ if st.button("Generar Ecuación: Ax+B=C"):
     #else:
         #st.write("La ecuación no tiene solución, ya que a = 0.")
 
-st.write(a)
-
-st.write(b)
-solucion = resolver_ecuacion(a,b)
-st.write(f"La ecuación generada es: x={solucion}")
+#st.write(a)
+#st.write(b)
+#solucion = resolver_ecuacion(a,b)
+#st.write(f"La ecuación generada es: x={solucion}")
