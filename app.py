@@ -22,7 +22,10 @@ st.title("Generador y Solucionador de Ecuaciones de Primer Grado")
 if st.button("Generar Ecuación"):
     a, b = generar_ecuacion()
     st.write(f"La ecuación generada es: {a}x + {b} = 0")
-    
+
+
+# Botón para generar una nueva ecuación
+if st.button("Ver la solución"):
     # Resolver la ecuación
     solucion = resolver_ecuacion(a, b)
     if solucion is not None:
