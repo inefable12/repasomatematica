@@ -12,7 +12,7 @@ def generar_ecuacion():
 # Función para resolver la ecuación ax + b = 0
 def resolver_ecuacion(a, b, c):
     if a != 0:
-        return (c-b)/a
+        return c/a - b/a
     else:
         return None
 
