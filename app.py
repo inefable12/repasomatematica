@@ -30,12 +30,4 @@ if st.button("Generar Ecuación: Ax+B=C"):
     else:
         st.write("La ecuación no tiene solución, ya que a = 0.")
 
-"""
-solucion1 = resolver_ecuacion(a, b)
-# Botón para generar una nueva ecuación
-if st.button(f"Solución de: {a}x + {b} = 0"):
-    if solucion1 is not None:
-        st.write(f"La solución es: x = {solucion1}")
-    else:
-        st.write("La ecuación no tiene solución, ya que a = 0.")
-"""
+
