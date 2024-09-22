@@ -29,7 +29,10 @@ if st.button("Generar Ecuación: Ax+B=C"):
     #else:
         #st.write("La ecuación no tiene solución, ya que a = 0.")
 
+sol = resolver_ecuacion()
+
 if st.button("Ver Solución:"):
+    st.write(f"La ecuación generada es: {a}x + {b} = 0")
     sol = resolver_ecuacion()
     st.write(f"La ecuación generada es: {sol}")
 
