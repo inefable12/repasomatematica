@@ -24,9 +24,9 @@ st.button("Generar Ecuación: Ax+B=C")
 a, b, c = generar_ecuacion()
 st.write(f"La ecuación generada es: {a}x + {b} = {c}")
 
-valorA = st.text_input("Escribe el valor de A:", " ")
-valorB = st.text_input("Escribe el valor de B:", " ")
-valorC = st.text_input("Escribe el valor de C:", " ")
+valorA = st.text_input("Escribe el valor de A:", a)
+valorB = st.text_input("Escribe el valor de B:", b)
+valorC = st.text_input("Escribe el valor de C:", c)
 
 st.markdown("Solución de Ax+B=C")
 solucion = resolver_ecuacion(valorA, valorB, valorC)
