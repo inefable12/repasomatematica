@@ -23,14 +23,13 @@ if st.button("Generar Ecuación: Ax+B=0"):
     a, b = generar_ecuacion()
     st.write(f"La ecuación generada es: {a}x + {b} = 0")
 
-
 # Botón para generar una nueva ecuación
-if st.button(f"Solución de {a}x + {b} = 0"):
+if st.button(f"Solución de: {a}x + {b} = 0"):
     # Resolver la ecuación
-    valorA = st.text_input("Escribe el valor de A: ",)
-    valorB = st.text_input("Escribe el valor de B: ",)
+    valorA = st.text_input("Escribe el valor de A: ","A")
+    valorB = st.text_input("Escribe el valor de B: ","B")
     
-    solucion = resolver_ecuacion(valorA, valorB)
+    solucion = resolver_ecuacion(a, b)
     if solucion is not None:
         st.write(f"La solución es: x = {solucion}")
     else:
