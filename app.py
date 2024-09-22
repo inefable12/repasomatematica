@@ -25,7 +25,7 @@ if st.button("Generar Ecuación: Ax+B=0"):
 
 
 # Botón para generar una nueva ecuación
-if st.button("Solución"):
+if st.button(f"Solución de {a}x + {b} = 0"):
     # Resolver la ecuación
     valorA = st.text_input("Escribe el valor de A: ",)
     valorB = st.text_input("Escribe el valor de B: ",)
