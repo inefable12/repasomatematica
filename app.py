@@ -24,10 +24,10 @@ if st.button("Generar Ecuación: Ax+B=C"):
     a, b = generar_ecuacion()
     st.write(f"La ecuación generada es: {a}x + {b} = {c}")
     # Resolver la ecuación
-    solucion = resolver_ecuacion(a, b, c)
-    if solucion is not None:
-        st.write(f"La solución es: x = {solucion}")
-    else:
-        st.write("La ecuación no tiene solución, ya que a = 0.")
+    # solucion = resolver_ecuacion(a, b, c)
+    #if solucion is not None:
+        #st.write(f"La solución es: x = {solucion}")
+    #else:
+        #st.write("La ecuación no tiene solución, ya que a = 0.")
 
 
