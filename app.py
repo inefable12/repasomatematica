@@ -24,8 +24,8 @@ if st.button("Generar Ecuación: Ax+B=C"):
     st.write(f"La ecuación generada es: {a}x + {b} = 0")
     if st.button(f"Para la ecuación: {a}x + {b} = 0"):
         #st.write(f"Para la ecuación: {a}x + {b} = 0")
-        solucion = resolver_ecuacion(a,b)
-        st.write(f"La ecuación generada es: x={solucion}")
+        #solucion = resolver_ecuacion(a,b)
+        st.write(f"La ecuación generada es: x={resolver_ecuacion(a,b)}")
     
     # Resolver la ecuación
     # solucion = resolver_ecuacion(a, b, c)
