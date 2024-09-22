@@ -12,7 +12,7 @@ def generar_ecuacion():
 # Función para resolver la ecuación ax + b = 0
 def resolver_ecuacion(a, b, c):
     if a != 0:
-        return c/a - b/a
+        return c/a-b/a
     else:
         return None
 
@@ -24,9 +24,9 @@ st.button("Generar Ecuación: Ax+B=C")
 a, b, c = generar_ecuacion()
 st.write(f"La ecuación generada es: {a}x + {b} = {c}")
 
-valorA = st.text_input("Escribe el valor de A:", "¿A?")
-valorB = st.text_input("Escribe el valor de B:", "¿B?")
-valorC = st.text_input("Escribe el valor de C:", "¿C?")
+valorA = st.text_input("Escribe el valor de A:", " ")
+valorB = st.text_input("Escribe el valor de B:", " ")
+valorC = st.text_input("Escribe el valor de C:", " ")
 
 st.markdown("Solución de Ax+B=C")
 solucion = resolver_ecuacion(valorA, valorB, valorC)
