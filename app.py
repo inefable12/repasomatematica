@@ -20,9 +20,9 @@ def resolver_ecuacion(a, b, c):
 st.title("Generador y Solucionador de Ecuaciones de 1º")
 
 # Botón para generar una nueva ecuación
-if st.button("Generar Ecuación: Ax+B=C"):
-    a, b, c = generar_ecuacion()
-    st.write(f"La ecuación generada es: {a}x + {b} = {c}")
+st.button("Generar Ecuación: Ax+B=C")
+a, b, c = generar_ecuacion()
+st.write(f"La ecuación generada es: {a}x + {b} = {c}")
 
 valorA = st.text_input("Escribe el valor de A:", "¿A?")
 valorB = st.text_input("Escribe el valor de B:", "¿B?")
