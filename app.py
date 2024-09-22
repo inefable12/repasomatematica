@@ -10,9 +10,9 @@ def generar_ecuacion():
     return a, b, c
 
 # Función para resolver la ecuación ax + b = 0
-def resolver_ecuacion(a, b, c):
-    if a != 0:
-        return c/a-b/a
+def resolver_ecuacion(m, n, p):
+    if m != 0:
+        return m/p-n/p
     else:
         return None
 
