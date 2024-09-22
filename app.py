@@ -30,4 +30,4 @@ valorC = st.text_input("Valor de C:", c)
 
 st.markdown(f"Solución de {valorA}x+{valorB}={valorC}")
 solucion = resolver_ecuacion(valorA, valorB, valorC)
-st.write(solucion)
+st.write(valorC-valorB)
